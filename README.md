@@ -7,8 +7,10 @@
 
 ## Screenshots
 
-![](images/homePage.PNG)
-![](images/post_detail.PNG)
+![](images/homePage.png)
+
+---
+![](images/post_detail.png)
 
 
  
