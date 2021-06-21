@@ -1,0 +1,38 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %} 
+Add Blog 
+{% endblock %} 
+
+{% block css_files %}
+  
+{% endblock %}
+
+{% block content %}
+
+{% include "blog/includes/navbar.html"%}
+
+<div class= 'm-5  p-5'>
+    <form method="POST" enctype="multipart/form-data">
+        <div class="form-group ">
+          
+        {% csrf_token %}
+            
+        <div class="form-control bg-primary">
+        
+        {{form.as_p }}
+
+        <button class="btn bg-success " type="submit">Submit</button>
+
+        </div>
+    
+        
+        </div>
+    </form>
+</div>
+
+
+
+
+{% endblock %}

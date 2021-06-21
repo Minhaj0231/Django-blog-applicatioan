@@ -1,0 +1,33 @@
+
+<div class="p-3">
+<div class = "row">
+
+    {% for post in posts %}
+
+    <div class = "col-sm-12 col-md-6 col-lg-4 p-3">             
+    <div class="card space  h-100" >
+
+
+        <div class="card" >
+                <img class="card-img-top" src="{{ post.image.url }}"  width="300" height="300" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">{{post.title}}</h5>
+                <p class="card-text">Click to see the full content</p>
+                <a href="{{ post.get_absulate_url}}" class="btn btn-primary">Read more</a>
+                </div>
+        </div>
+        
+            
+        
+    </div>
+    </div>
+
+
+    {% endfor %}
+
+
+    
+
+
+</div>
+</div>
